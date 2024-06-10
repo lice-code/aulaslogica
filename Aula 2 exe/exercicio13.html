@@ -1,0 +1,13 @@
+<script>
+
+var valor_litro = parseFloat(prompt("Digite o valor do litro da poção: "));
+
+var litros = parseFloat(prompt("Digite a quantidade de litros que você deseja abastecer no frasco: "));
+
+var valor_total = valor_litro * litros;
+
+var valor_com_desconto = valor_total * 0.90;
+
+alert("Valor total da poção: R$ " + valor_total.toFixed(2));
+alert("Valor com desconto: R$ " + valor_com_desconto.toFixed(2));
+</script>

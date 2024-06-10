@@ -1,0 +1,12 @@
+<script>
+
+var nome_funcionario = prompt("Digite o nome do funcionário: ");
+
+var horas_trabalhadas = parseFloat(prompt("Digite o número de horas trabalhadas pelo funcionário: "));
+
+var valor_hora = parseFloat(prompt("Digite o valor que o funcionário recebe por hora trabalhada: "));
+
+var salario = horas_trabalhadas * valor_hora;
+
+console.log("O salário do funcionário " + nome_funcionario + " é de R$ " + salario.toFixed(2));
+</script>
