@@ -1,0 +1,22 @@
+<script>
+   let somaIdades = 0;
+let contadorMaioresIdade = 0;
+
+while (true) {
+  const idade = parseInt(prompt("Informe a idade de uma pessoa (ou 0 para sair): "));
+  if (idade === 0) break;
+
+  if (idade >= 18) {
+    somaIdades += idade;
+    contadorMaioresIdade++;
+  }
+}
+
+if (contadorMaioresIdade > 0) {
+  const mediaIdade = somaIdades / contadorMaioresIdade;
+  console.log(`Soma das idades maiores de idade: ${somaIdades}`);
+  console.log(`Média de idade das pessoas maiores de idade: ${mediaIdade.toFixed(2)}`);
+} else {
+  console.log("Nenhuma pessoa maior de idade foi informada.");
+}
+</script>

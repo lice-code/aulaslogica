@@ -1,0 +1,14 @@
+<script>
+let vezes = parseInt(prompt("Informe quantas vezes você deseja lançar o dado: "));
+
+let resultados = [];
+for (let i = 0; i < vezes; i++) {
+  let resultado = Math.floor(Math.random() * 6) + 1;
+  resultados.push(resultado);
+}
+
+console.log("Resultados do lançamento do dado:");
+for (let resultado of resultados) {
+  console.log(`Lançamento ${resultados.indexOf(resultado) + 1}: ${resultado}`);
+}
+</script>

@@ -1,0 +1,18 @@
+<script>
+let contador025 = 0;
+let contador5175 = 0;
+
+while (true) {
+  let numero = parseInt(prompt("Informe um número (ou um número negativo para sair): "));
+  if (numero < 0) break;
+
+  if (numero >= 0 && numero <= 25) {
+    contador025++;
+  } else if (numero >= 51 && numero <= 75) {
+    contador5175++;
+  }
+}
+
+console.log(`Números entre 0 e 25: ${contador025}`);
+console.log(`Números entre 51 e 75: ${contador5175}`);
+</script>

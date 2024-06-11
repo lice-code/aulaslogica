@@ -1,0 +1,16 @@
+<script>
+ let valorInicial = parseInt(prompt("Informe um valor inicial para calcular o fatorial: "));
+
+let resultado = 1;
+let sequencia = "";
+
+for (let i = valorInicial; i > 0; i--) {
+  resultado *= i;
+  sequencia += i;
+  if (i > 1) {
+    sequencia += " x ";
+  }
+}
+
+console.log(`${valorInicial}! = ${sequencia} = ${resultado}`);
+</script>
