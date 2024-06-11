@@ -1,0 +1,24 @@
+<script>
+    const tipoCliente = parseInt(prompt("Digite o tipo de cliente (1, 2 ou 3)"));
+const kwH = parseFloat(prompt("Digite o número de kW/h consumidos"));
+
+let valorKWH = 0;
+
+switch (tipoCliente) {
+  case 1:
+    valorKWH = 0.60;
+    break;
+  case 2:
+    valorKWH = 0.48;
+    break;
+  case 3:
+    valorKWH = 1.29;
+    break;
+  default:
+    alert("Tipo de cliente inválido");
+    return;
+}
+
+const contaLuz = valorKWH * kwH;
+alert(`O valor da conta de luz é R$ ${contaLuz.toFixed(2)}`);
+</script>

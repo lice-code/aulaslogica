@@ -1,0 +1,24 @@
+<script>
+    const nivelProfessor = parseInt(prompt("Digite o nível do professor (1, 2 ou 3)"));
+const horasAula = parseFloat(prompt("Digite o número de horas/aula trabalhadas"));
+
+let valorHoraAula = 0;
+
+switch (nivelProfessor) {
+  case 1:
+    valorHoraAula = 12.00;
+    break;
+  case 2:
+    valorHoraAula = 17.00;
+    break;
+  case 3:
+    valorHoraAula = 25.00;
+    break;
+  default:
+    alert("Nível de professor inválido");
+    return;
+}
+
+const salario = valorHoraAula * horasAula;
+alert(`O salário do professor é R$ ${salario.toFixed(2)}`);
+</script>

@@ -1,0 +1,33 @@
+<script>
+    const nomeEstudante = prompt("Digite o nome do estudante");
+const matricula = prompt("Digite o número de matrícula");
+const nota1 = parseFloat(prompt("Digite a primeira nota"));
+const nota2 = parseFloat(prompt("Digite a segunda nota"));
+const nota3 = parseFloat(prompt("Digite a terceira nota"));
+
+const notaFinal = (nota1 + nota2 + nota3) / 3;
+
+let classificacao = "";
+
+if (notaFinal >= 8 && notaFinal <= 10) {
+  classificacao = "A";
+} 
+
+else if (notaFinal >= 7 && notaFinal < 8) {
+  classificacao = "B";
+} 
+
+else if (notaFinal >= 6 && notaFinal < 7) {
+  classificacao = "C";
+} 
+
+else if (notaFinal >= 5 && notaFinal < 6) {
+  classificacao = "D";
+} 
+
+else {
+  classificacao = "R";
+}
+
+alert(`Estudante ${nomeEstudante} - Matrícula ${matricula} - Nota Final: ${notaFinal.toFixed(2)} - Classificação: ${classificacao}`);
+</script>

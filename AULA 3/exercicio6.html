@@ -1,0 +1,39 @@
+<script>
+    const precoCusto1 = parseFloat(prompt("Digite o preço de custo do produto 1"));
+const precoVenda1 = parseFloat(prompt("Digite o preço de venda do produto 1"));
+const precoCusto2 = parseFloat(prompt("Digite o preço de custo do produto 2"));
+const precoVenda2 = parseFloat(prompt("Digite o preço de venda do produto 2"));
+
+const lucro1 = precoVenda1 - precoCusto1;
+const lucro2 = precoVenda2 - precoCusto2;
+
+if (lucro1 > 0) {
+  alert(`Produto 1: Lucro de ${lucro1}`);
+} 
+
+else if (lucro1 < 0) {
+  alert(`Produto 1: Prejuízo de ${Math.abs(lucro1)}`);
+} 
+
+else {
+  alert("Produto 1: Empate");
+}
+
+if (lucro2 > 0) {
+  alert(`Produto 2: Lucro de ${lucro2}`);
+} 
+
+else if (lucro2 < 0) {
+  alert(`Produto 2: Prejuízo de ${Math.abs(lucro2)}`);
+} 
+
+else {
+  alert("Produto 2: Empate");
+}
+
+const mediaPrecoCusto = (precoCusto1 + precoCusto2) / 2;
+const mediaPrecoVenda = (precoVenda1 + precoVenda2) / 2;
+
+alert(`Média de preço de custo: ${mediaPrecoCusto}`);
+alert(`Média de preço de venda: ${mediaPrecoVenda}`);
+</script>

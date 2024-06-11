@@ -1,0 +1,30 @@
+<script>
+    const salarioAntigo = parseFloat(prompt("Digite o salário antigo do funcionário"));
+const cargo = prompt("Digite o cargo do funcionário");
+
+let aumento = 0;
+
+switch (cargo) {
+  case "Diretor":
+    aumento = 0.10;
+    break;
+  case "Gerente":
+    aumento = 0.08;
+    break;
+  case "Analista":
+    aumento = 0.06;
+    break;
+  case "Assistente":
+    aumento = 0.04;
+    break;
+  default:
+    aumento = 0.40;
+}
+
+const novoSalario = salarioAntigo * (1 + aumento);
+const diferenca = novoSalario - salarioAntigo;
+
+alert(`Salário antigo: R$ ${salarioAntigo.toFixed(2)}`);
+alert(`Novo salário: R$ ${novoSalario.toFixed(2)}`);
+alert(`Diferença: R$ ${diferenca.toFixed(2)}`);
+</script>

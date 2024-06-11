@@ -1,0 +1,14 @@
+<script>
+    const area = parseFloat(prompt("Digite o tamanho em metros quadrados da área a ser pintada"));
+
+const litrosNecessarios = area / 6;
+
+const latas18 = Math.ceil(litrosNecessarios / 18);
+const precoLatas18 = latas18 * 80;
+alert(`Você precisará de ${latas18} latas de 18 litros, ao custo de R$ ${precoLatas18.toFixed(2)}`);
+
+
+const galoes36 = Math.ceil(litrosNecessarios / 3.6);
+const precoGaloes36 = galoes36 * 25;
+alert(`Você precisará de ${galoes36} galões de 3,6 litros, ao custo de R$ ${precoGaloes36.toFixed(2)}`);
+</script>

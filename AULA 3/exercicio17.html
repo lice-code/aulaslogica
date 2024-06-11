@@ -1,0 +1,30 @@
+<script>
+    const codigoProduto = parseInt(prompt("Digite o código do produto"));
+const quantidade = parseInt(prompt("Digite a quantidade comprada"));
+
+let precoUnitario = 0;
+
+switch (codigoProduto) {
+  case 1001:
+    precoUnitario = 5.32;
+    break;
+  case 1324:
+    precoUnitario = 6.45;
+    break;
+  case 6548:
+    precoUnitario = 2.37;
+    break;
+  case 0987:
+    precoUnitario = 5.32;
+    break;
+  case 7623:
+    precoUnitario = 6.45;
+    break;
+  default:
+    alert("Código de produto inválido");
+    return;
+}
+
+const precoTotal = precoUnitario * quantidade;
+alert(`O preço total é R$ ${precoTotal.toFixed(2)}`);
+</script>

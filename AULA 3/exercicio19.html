@@ -1,0 +1,25 @@
+<script>
+    const nome = prompt("Digite o nome da pessoa");
+const sexo = prompt("Digite o sexo da pessoa (M/F)");
+const altura = parseFloat(prompt("Digite a altura da pessoa em metros"));
+const idade = parseInt(prompt("Digite a idade da pessoa"));
+
+let pesoIdeal = 0;
+
+if (sexo.toUpperCase() === "M") {
+  pesoIdeal = 72.7 * Math.pow(altura, 2);
+} 
+
+else if (sexo.toUpperCase() === "F") {
+  pesoIdeal = 62.1 * Math.pow(altura, 2);
+} 
+
+else {
+  alert("Sexo inválido");
+  return;
+}
+
+alert(`O peso ideal de ${nome} é ${pesoIdeal.toFixed(2)} kg`);
+</script>
+
+deu errado n sei pq 

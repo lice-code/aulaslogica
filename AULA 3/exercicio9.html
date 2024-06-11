@@ -1,0 +1,18 @@
+<script>
+    const peso = parseFloat(prompt("Digite o peso de peixes"));
+
+let excesso = 0;
+let multa = 0;
+
+if (peso > 50) {
+  excesso = peso - 50;
+  multa = excesso * 4;
+  alert(`Excesso: ${excesso} kg`);
+  alert(`Multa: R$ ${multa}`);
+} 
+
+else {
+  alert("Excesso: 0 kg");
+  alert("Multa: R$ 0");
+}
+</script>

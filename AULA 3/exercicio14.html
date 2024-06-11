@@ -1,0 +1,23 @@
+<script>
+    const nota1 = parseFloat(prompt("Digite a primeira nota"));
+const nota2 = parseFloat(prompt("Digite a segunda nota"));
+const nota3 = parseFloat(prompt("Digite a terceira nota"));
+const opcaoMedia = prompt("Digite a opção de média (aritmética ou ponderada)");
+
+let media = 0;
+
+if (opcaoMedia === "aritmética") {
+  media = (nota1 + nota2 + nota3) / 3;
+} 
+
+else if (opcaoMedia === "ponderada") {
+  media = (nota1 * 3 + nota2 * 3 + nota3 * 4) / 10;
+} 
+
+else {
+  alert("Opção de média inválida");
+  return;
+}
+
+alert(`A média é ${media.toFixed(2)}`);
+</script>

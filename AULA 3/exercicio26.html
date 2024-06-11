@@ -1,0 +1,27 @@
+<script>
+    const i = parseInt(prompt("Digite o valor de i"));
+const a = parseFloat(prompt("Digite o valor de a"));
+const b = parseFloat(prompt("Digite o valor de b"));
+const c = parseFloat(prompt("Digite o valor de c"));
+
+if (i === 1) {
+  const valores = [a, b, c].sort((x, y) => x - y);
+  alert(`Valores em ordem crescente: ${valores.join(", ")}`);
+} 
+
+else if (i === 2) {
+  const valores = [a, b, c].sort((x, y) => y - x);
+  alert(`Valores em ordem decrescente: ${valores.join(", ")}`);
+} 
+
+else if (i === 3) {
+  const valores = [a, b, c].sort((x, y) => y - x);
+  const maior = valores[0];
+  valores.shift();
+  alert(`Valores com o maior entre os dois: ${valores.join(", ")} e ${maior}`);
+} 
+
+else {
+  alert("Valor de i inválido");
+}
+</script>

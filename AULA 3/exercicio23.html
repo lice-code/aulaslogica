@@ -1,0 +1,12 @@
+<script>
+    const horaInicio = parseInt(prompt("Digite a hora de início do jogo"));
+const horaFim = parseInt(prompt("Digite a hora do final do jogo"));
+
+let duracao = horaFim - horaInicio;
+
+if (duracao < 0) {
+  duracao += 24;
+}
+
+alert(`A duração do jogo foi de ${duracao} horas`);
+</script>
