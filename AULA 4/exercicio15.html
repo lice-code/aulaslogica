@@ -1,0 +1,15 @@
+<script>
+    let contador = 0;
+
+while (true) {
+  let valor = parseFloat(prompt("Digite um valor (ou um valor negativo para sair): "));
+  if (valor < 0) {
+    break;
+  }
+  contador++;
+  if (contador % 20 === 0) {
+    alert("Valor\tQuadrado\tCubo\tRaiz Quadrada");
+  }
+  alert(`${valor}\t${valor ** 2}\t${valor ** 3}\t${Math.sqrt(valor)}`);
+}
+</script>

@@ -1,0 +1,44 @@
+<script>
+    let votosCandidato1 = 0;
+let votosCandidato2 = 0;
+let votosCandidato3 = 0;
+let votosCandidato4 = 0;
+let votosNulos = 0;
+let votosBrancos = 0;
+
+while (true) {
+  let voto = parseInt(prompt("Digite o código do voto (ou 0 para sair): "));
+  if (voto === 0) {
+    break;
+  }
+  switch (voto) {
+    case 1:
+      votosCandidato1++;
+      break;
+    case 2:
+      votosCandidato2++;
+      break;
+    case 3:
+      votosCandidato3++;
+      break;
+    case 4:
+      votosCandidato4++;
+      break;
+    case 5:
+      votosNulos++;
+      break;
+    case 6:
+      votosBrancos++;
+      break;
+    default:
+      alert("Código de voto inválido!");
+  }
+}
+
+alert(`Votos para o candidato 1: ${votosCandidato1}`);
+alert(`Votos para o candidato 2: ${votosCandidato2}`);
+alert(`Votos para o candidato 3: ${votosCandidato3}`);
+alert(`Votos para o candidato 4: ${votosCandidato4}`);
+alert(`Votos nulos: ${votosNulos}`);
+alert(`Votos em branco: ${votosBrancos}`);
+</script>

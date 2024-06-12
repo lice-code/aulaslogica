@@ -1,0 +1,14 @@
+<script>
+    let n = parseInt(prompt("Digite o número de termos: "));
+let a1 = parseFloat(prompt("Digite o primeiro termo: "));
+let r = parseFloat(prompt("Digite a razão: "));
+
+let soma = 0;
+for (let i = 0; i < n; i++) {
+  let termo = a1 + i * r;
+  soma += termo;
+  alert(`Termo ${i + 1}: ${termo}`);
+}
+
+alert(`Soma dos termos: ${soma}`);
+</script>

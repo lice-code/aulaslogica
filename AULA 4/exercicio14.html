@@ -1,0 +1,27 @@
+<script>
+    let contador025 = 0;
+let contador2650 = 0;
+let contador5175 = 0;
+let contador76100 = 0;
+
+while (true) {
+  let valor = parseFloat(prompt("Digite um valor (ou um valor negativo para sair): "));
+  if (valor < 0) {
+    break;
+  }
+  if (valor >= 0 && valor <= 25) {
+    contador025++;
+  } else if (valor >= 26 && valor <= 50) {
+    contador2650++;
+  } else if (valor >= 51 && valor <= 75) {
+    contador5175++;
+  } else if (valor >= 76 && valor <= 100) {
+    contador76100++;
+  }
+}
+
+alert(`Quantidade de valores entre 0 e 25: ${contador025}`);
+alert(`Quantidade de valores entre 26 e 50: ${contador2650}`);
+alert(`Quantidade de valores entre 51 e 75: ${contador5175}`);
+alert(`Quantidade de valores entre 76 e 100: ${contador76100}`);
+</script>

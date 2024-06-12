@@ -1,0 +1,30 @@
+<script>
+    let soma = 0;
+let quantidadePositivos = 0;
+let quantidadeNegativos = 0;
+let contador = 0;
+
+while (true) {
+  let valor = parseFloat(prompt("Digite um valor (ou um valor negativo para sair): "));
+  if (valor < 0) {
+    break;
+  }
+  soma += valor;
+  contador++;
+  if (valor > 0) {
+    quantidadePositivos++;
+  } else {
+    quantidadeNegativos++;
+  }
+}
+
+let media = soma / contador;
+let percentualPositivos = (quantidadePositivos / contador) * 100;
+let percentualNegativos = (quantidadeNegativos / contador) * 100;
+
+alert(`Média: ${media.toFixed(2)}`);
+alert(`Quantidade de valores positivos: ${quantidadePositivos}`);
+alert(`Quantidade de valores negativos: ${quantidadeNegativos}`);
+alert(`Percentual de valores positivos: ${percentualPositivos.toFixed(2)}%`);
+alert(`Percentual de valores negativos: ${percentualNegativos.toFixed(2)}%`);
+</script>

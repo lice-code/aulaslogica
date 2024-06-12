@@ -1,0 +1,28 @@
+<script>
+    let linha = prompt("Digite um valor para m (ou 0 para sair): ");
+while (linha !== "0") {
+  const m = Number(linha);
+  if (m % 2 === 0) {
+    let divisores = 0;
+    for (let i = 1; i <= m; i++) {
+      if (m % i === 0) {
+        divisores++;
+      }
+    }
+    console.log(`O número ${m} tem ${divisores} divisores.`);
+  } else if (m < 10) {
+    let fatorial = 1;
+    for (let i = 1; i <= m; i++) {
+      fatorial *= i;
+    }
+    console.log(`O fatorial de ${m} é: ${fatorial}`);
+  } else {
+    let soma = 0;
+    for (let i = 1; i <= m; i++) {
+      soma += i;
+    }
+    console.log(`A soma dos inteiros de 1 até ${m} é: ${soma}`);
+  }
+  linha = prompt("Digite um valor para m (ou 0 para sair): ");
+}
+</script>

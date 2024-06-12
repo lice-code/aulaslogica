@@ -1,0 +1,12 @@
+<script>
+    let linha = prompt("Digite um par de valores m,n (ou 0 para sair): ");
+while (linha !== "0") {
+  const [m, n] = linha.split(",").map(Number);
+  let soma = 0;
+  for (let i = m; i < m + n; i++) {
+    soma += i;
+  }
+  console.log(`A soma dos ${n} inteiros consecutivos a partir de ${m} é: ${soma}`);
+  linha = prompt("Digite um par de valores m,n (ou 0 para sair): ");
+}
+</script>

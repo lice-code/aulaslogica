@@ -1,0 +1,21 @@
+<script>
+    let somaNotas = 0;
+let contadorAlunos = 0;
+
+while (true) {
+  let codigoAluno = parseInt(prompt("Digite o código do aluno (ou 0 para sair): "));
+  if (codigoAluno === 0) {
+    break;
+  }
+  let nota1 = parseFloat(prompt("Digite a primeira nota: "));
+  let nota2 = parseFloat(prompt("Digite a segunda nota: "));
+  let nota3 = parseFloat(prompt("Digite a terceira nota: "));
+
+  somaNotas += (nota1 + nota2 + nota3) / 3;
+  contadorAlunos++;
+}
+
+let mediaNotas = somaNotas / contadorAlunos;
+
+alert(`Média das notas dos alunos: ${mediaNotas.toFixed(2)}`);
+</script>

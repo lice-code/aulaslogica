@@ -1,0 +1,19 @@
+<script>
+    let somaPares = 0;
+let contadorPares = 0;
+
+while (true) {
+  let numero = parseInt(prompt("Digite um número (ou 0 para sair): "));
+  if (numero === 0) {
+    break;
+  }
+  if (numero % 2 === 0) {
+    somaPares += numero;
+    contadorPares++;
+  }
+}
+
+let mediaPares = somaPares / contadorPares;
+
+alert(`Média dos números pares: ${mediaPares.toFixed(2)}`);
+</script>

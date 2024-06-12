@@ -1,0 +1,22 @@
+<script>
+    let linha = prompt("Digite um número positivo (ou 0 para sair): ");
+let pares = 0;
+let impares = 0;
+let somaPares = 0;
+let somaGeral = 0;
+while (linha !== "0") {
+  const num = Number(linha);
+  if (num % 2 === 0) {
+    pares++;
+    somaPares += num;
+  } else {
+    impares++;
+  }
+  somaGeral += num;
+  linha = prompt("Digite um número positivo (ou 0 para sair): ");
+}
+console.log(`Quantidade de números pares: ${pares}`);
+console.log(`Quantidade de números ímpares: ${impares}`);
+console.log(`Média de valores pares: ${somaPares / pares}`);
+console.log(`Média geral dos números lidos: ${somaGeral / (pares + impares)}`);
+</script>

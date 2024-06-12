@@ -1,0 +1,12 @@
+<script>
+    let n = parseInt(prompt("Digite o número de valores a serem lidos: "));
+
+for (let i = 0; i < n; i++) {
+  let valor = parseInt(prompt(`Digite o valor ${i + 1}: `));
+  let fatorial = 1;
+  for (let j = 1; j <= valor; j++) {
+    fatorial *= j;
+  }
+  alert(`Valor: ${valor}, Fatorial: ${fatorial}`);
+}
+</script>
