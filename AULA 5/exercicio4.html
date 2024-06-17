@@ -1,0 +1,28 @@
+<script>
+ let colecao = [];
+
+while (true) {
+  console.log("Opções:");
+  console.log("1. Adicionar um novo elemento");
+  console.log("2. Mostrar todos os elementos adicionados");
+  console.log("0. Sair do programa");
+
+  let opcao = prompt("Selecione uma opção:");
+
+  switch (opcao) {
+    case "1":
+      let novoElemento = prompt("Adicione uma string:");
+      colecao.push(novoElemento);
+      break;
+    case "2":
+      console.log("Elementos adicionados:");
+      console.log(colecao);
+      break;
+    case "0":
+      console.log("Saindo do programa...");
+      return;
+    default:
+      console.log("Opção inválida. Tente novamente.");
+  }
+}   
+</script>

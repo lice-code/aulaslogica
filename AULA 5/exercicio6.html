@@ -1,0 +1,23 @@
+<script>
+    let alturas = [];
+
+for (let i = 0; i < 20; i++) {
+  let altura = parseFloat(prompt(`Altura da pessoa ${i + 1}:`));
+  alturas.push(altura);
+}
+
+let somaAlturas = 0;
+let pessoasAcimaDe2m = 0;
+
+for (let altura of alturas) {
+  somaAlturas += altura;
+  if (altura > 2) {
+    pessoasAcimaDe2m++;
+  }
+}
+
+let alturaMedia = somaAlturas / 20;
+
+console.log(`Altura média: ${alturaMedia.toFixed(2)}`);
+console.log(`Pessoas com altura superior a 2 metros: ${pessoasAcimaDe2m}`);
+</script>

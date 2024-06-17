@@ -1,0 +1,21 @@
+<script>
+    let clientes = [];
+
+for (let i = 0; i < N; i++) {
+  let numeroConta = parseInt(prompt(`Número da conta do cliente ${i + 1}:`));
+  let saldo = parseFloat(prompt(`Saldo do cliente ${i + 1}:`));
+
+  clientes.push({ numeroConta, saldo });
+}
+
+let clientesComSaldoNegativo = 0;
+
+for (let cliente of clientes) {
+  if (cliente.saldo < 0) {
+    clientesComSaldoNegativo++;
+  }
+}
+
+console.log(`Total de clientes com saldo negativo: ${clientesComSaldoNegativo}`);
+console.log(`Total de clientes cadastrados: ${N}`);
+</script>

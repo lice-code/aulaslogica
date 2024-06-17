@@ -1,0 +1,28 @@
+<script>
+    let bandas = [];
+
+for (let i = 0; i < 5; i++) {
+  let banda = {
+    nome: "",
+    tipoDeMusica: "",
+    numeroDeIntegrantes: 0,
+    ranking: 0
+  };
+
+  banda.nome = prompt(`Nome da banda ${i + 1}:`);
+  banda.tipoDeMusica = prompt(`Tipo de música da banda ${i + 1}:`);
+  banda.numeroDeIntegrantes = parseInt(prompt(`Número de integrantes da banda ${i + 1}:`));
+  banda.ranking = parseInt(prompt(`Ranking da banda ${i + 1} (1-5):`));
+
+  bandas.push(banda);
+}
+
+console.log("Informações das bandas:");
+for (let banda of bandas) {
+  console.log(`Banda: ${banda.nome}`);
+  console.log(`Tipo de música: ${banda.tipoDeMusica}`);
+  console.log(`Número de integrantes: ${banda.numeroDeIntegrantes}`);
+  console.log(`Ranking: ${banda.ranking}`);
+  console.log("------------");
+}
+</script>
