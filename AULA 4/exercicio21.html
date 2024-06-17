@@ -1,0 +1,13 @@
+<script>
+   let produto = 1;
+let numero;
+
+do {
+  numero = parseInt(prompt("Digite um número inteiro (0 para sair): "));
+  if (numero > 0 && numero % 2 === 0) {
+    produto *= numero;
+  }
+} while (numero!== 0);
+
+console.log(`O produtório dos números pares é: ${produto}`);
+</script>

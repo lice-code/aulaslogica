@@ -1,0 +1,28 @@
+<script>
+    let dados = [];
+let somaSalarios = 0;
+let maiorIdade = -Infinity;
+let menorIdade = Infinity;
+let mulheres100 = 0;
+
+while (true) {
+  let idade = parseInt(prompt("Digite a idade (ou 0 para sair): "));
+  if (idade === 0) break;
+  let sexo = prompt("Digite o sexo (M/F): ");
+  let salario = parseFloat(prompt("Digite o salário: "));
+
+  dados.push({ idade, sexo, salario });
+
+  somaSalarios += salario;
+  if (idade > maiorIdade) maiorIdade = idade;
+  if (idade < menorIdade) menorIdade = idade;
+  if (sexo === 'F' && salario <= 100) mulheres100++;
+}
+
+let mediaSalario = somaSalarios / dados.length;
+
+console.log(`A média de salário do grupo é: R$ ${mediaSalario.toFixed(2)}`);
+console.log(`A maior idade do grupo é: ${maiorIdade}`);
+console.log(`A menor idade do grupo é: ${menorIdade}`);
+console.log(`A quantidade de mulheres com salário até R$100,00 é: ${mulheres100}`);
+</script>

@@ -1,12 +1,13 @@
 <script>
-    let linha = prompt("Digite um número inteiro (ou 0 para sair): ");
-let somaNegativos = 0;
-while (linha !== "0") {
-  const num = Number(linha);
-  if (num < 0) {
-    somaNegativos += num;
+    let soma = 0;
+let numero;
+
+do {
+  numero = parseInt(prompt("Digite um número inteiro (0 para sair): "));
+  if (numero < 0) {
+    soma += numero;
   }
-  linha = prompt("Digite um número inteiro (ou 0 para sair): ");
-}
-console.log(`O somatório dos números negativos é: ${somaNegativos}`);
+} while (numero!== 0);
+
+console.log(`A soma dos números negativos é: ${soma}`);
 </script>

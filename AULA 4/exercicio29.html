@@ -1,0 +1,16 @@
+<script>
+    let soma = 0;
+let qtdNumeros = 0;
+
+while (true) {
+  let numero = parseInt(prompt("Digite um número entre 13 e 73 (ou 0 para sair): "));
+  if (numero === 0) break;
+  if (numero >= 13 && numero <= 73) {
+    soma += numero;
+    qtdNumeros++;
+  }
+}
+
+let media = soma / qtdNumeros;
+console.log(`Média aritmética: ${media.toFixed(2)}`);
+</script>

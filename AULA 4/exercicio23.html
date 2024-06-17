@@ -1,0 +1,27 @@
+<script>
+    let maiorIdade = -Infinity;
+let qtdFeminino18_35VerdeLouro = 0;
+
+while (true) {
+  let sexo = prompt("Digite o sexo (masculino ou feminino): ");
+  if (sexo === 'feminino') {
+    let idade = parseInt(prompt("Digite a idade: "));
+    if (idade >= 18 && idade <= 35) {
+      let corOlhos = prompt("Digite a cor dos olhos (azuis, verdes ou castanhos): ");
+      if (corOlhos === 'verdes') {
+        let corCabelos = prompt("Digite a cor dos cabelos (louros, castanhos ou pretos): ");
+        if (corCabelos === 'louros') {
+          qtdFeminino18_35VerdeLouro++;
+        }
+      }
+    }
+  }
+
+  let idadeAtual = parseInt(prompt("Digite a idade (ou -1 para sair): "));
+  if (idadeAtual === -1) break;
+  if (idadeAtual > maiorIdade) maiorIdade = idadeAtual;
+}
+
+console.log(`A maior idade dos habitantes é: ${maiorIdade}`);
+console.log(`A quantidade de indivíduos do sexo feminino cuja idade está entre 18 e 35 anos inclusive e que tenham olhos verdes e cabelos louros é: ${qtdFeminino18_35VerdeLouro}`);
+</script>

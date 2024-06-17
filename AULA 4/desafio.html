@@ -1,0 +1,17 @@
+<script>
+    function calcularE(n) {
+  let e = 1;
+  let fatorial = 1;
+
+  for (let i = 1; i <= n; i++) {
+    fatorial *= i;
+    e += 1 / fatorial;
+  }
+
+  return e;
+}
+
+const n = 5;
+const resultado = calcularE(n);
+console.log(`O valor de E é: ${resultado.toFixed(10)}`);
+</script>

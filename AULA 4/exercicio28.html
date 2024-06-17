@@ -1,0 +1,12 @@
+<script>
+    let n = parseInt(prompt("Digite um valor inteiro e positivo: "));
+let soma = 0;
+
+for (let i = 1; i <= n; i++) {
+  let termo = 1 / i;
+  console.log(`Termo ${i}: 1/${i} = ${termo.toFixed(2)}`);
+  soma += termo;
+}
+
+console.log(`Valor final de S: ${soma.toFixed(2)}`);
+</script>

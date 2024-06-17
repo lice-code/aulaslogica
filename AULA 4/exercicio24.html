@@ -1,0 +1,28 @@
+<script>
+    let somaPrecoAntes = 0;
+let somaPrecoDepois = 0;
+let qtdProdutos = 0;
+
+while (true) {
+  let codigo = parseInt(prompt("Digite o código do produto (negativo para sair): "));
+  if (codigo < 0) break;
+
+  let precoCusto = parseFloat(prompt("Digite o preço de custo do produto: "));
+
+  let precoNovo = precoCusto * 1.2;
+
+  console.log(`Código do produto: ${codigo}`);
+  console.log(`Preço de custo: R$ ${precoCusto.toFixed(2)}`);
+  console.log(`Preço novo: R$ ${precoNovo.toFixed(2)}`);
+
+  somaPrecoAntes += precoCusto;
+  somaPrecoDepois += precoNovo;
+  qtdProdutos++;
+}
+
+let mediaPrecoAntes = somaPrecoAntes / qtdProdutos;
+let mediaPrecoDepois = somaPrecoDepois / qtdProdutos;
+
+console.log(`Média dos preços antes do aumento: R$ ${mediaPrecoAntes.toFixed(2)}`);
+console.log(`Média dos preços depois do aumento: R$ ${mediaPrecoDepois.toFixed(2)}`);
+</script>
